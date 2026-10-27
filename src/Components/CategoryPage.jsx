@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, Modal, Form } from 'react-bootstrap';
 import ShopNavbar from './ShopNavbar';
 
 export default function CategoryPage({ category, user, handleLogout }) {
-  const navigate = useNavigate();
+  
   
   const [showSizeModal, setShowSizeModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
